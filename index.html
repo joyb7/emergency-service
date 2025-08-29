@@ -1,11 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <h1>Hello joy</h1>
+    <header class=" ml-[61px] mr-[61px] flex justify-between items-center bg-white">
+        <div class="flex items-center text-green-500">
+            <img src="assets/logo.png" class="w-12 h-12" alt="Logo">
+            <h1 class="p-4 font-bold text-[#006747]">Emergency <br> Service</h1>
+        </div>
+        <div class="mt-[24px] mb-[24px] flex gap-4">
+            <button
+                class="w-[123px] h-[52px] bg-[#D3F3DF] rounded-full flex items-center justify-center gap-2"><span>0</span><img
+                    src="assets/heart.png" class="inline-block w-[30px] h-[30px]" alt=""></button>
+            <button
+                class="w-[123px] h-[52px] bg-[#D3F3DF] rounded-full flex items-center justify-center gap-2"><span>100</span><img
+                    src="assets/coin.png" class="inline-block w-[30px] h-[30px]" alt=""></button>
+            <button
+                class="w-[123px] h-[52px] bg-[#00A63b] rounded-full text-white flex items-center justify-center gap-2"><span>2</span>Copy</button>
+        </div>
+    </header>
+    <main class="bg-[#D3F3DF] min-h-screen w-full">
+        <section class="h-[239px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+            <div class="justify-center items-center text-center text-white flex flex-col gap-[11px]">
+                <img src="assets/logo-dark.png" class="w-[92px] h-[92px] mt-[21px]" alt="">
+                <h1 class="font-semibold text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class="font-semibold">Government Emergency Services at Your Fingertip –
+                    A Project by Government of the People’s Republic of
+                    Bangladesh</p>
+            </div>
+        </section>
+        <section class="flex justify-between">
+            <div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block">
+                    <div class="flex justify-between items-center">
+                        <img src="assets/emergency.png" class="w-[32px] h-[32px] bg-red-300" alt="">
+                        <div class="rating gap-1">
+                            <input type="radio" name="rating-3" class="mask mask-heart bg-red-800"
+                                aria-label="1 star" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h1>
+                        <p class="text-gray-500 mb-3">National Emergency</p>
+                        <h1 class="font-bold text-[24px]">999</h1>
+                        <p class="text-gray-500 border border-gray-300 p-1 inline-block mb-7">সার্বজনীন</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn w-[182px] h-[40px] "><i
+                                class="fa-regular fa-copy"></i><span>Copy</span></button>
+                        <button
+                            class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block h-[fit-content] sticky top-0">
+                <h1>Call History</h1>
+                <button
+                    class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
+                    <img src="assets/clock.png" alt="">
+                    <span>Call History</span>
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
