@@ -259,17 +259,39 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="border border-gray-300 rounded-lg bg-white m-[52px] p-[32px] inline-block h-[fit-content] sticky top-0">
-                <h1>Call History</h1>
-                <button
-                    class="w-[182px] h-[40px] flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md">
-                    <img src="assets/clock.png" alt="">
-                    <span>Call History</span>
-                </button>
+            </div>
+
+
+            <div class="call-history sm:w-3/12 w-[90%] shadow-md bg-white rounded-xl my-4 p-5 m-auto">
+
+
+
+                <div class=" flex justify-between items-center ">
+                    <div class="card-img  py-1 rounded-lg  flex justify-center items-center"><i
+                            class="fa-solid fa-clock mr-2"></i>
+                        <h2 class="font-semibold">Call History</h2>
+                    </div>
+                    <div id="clear-button"
+                        class="clear-button w-[70px] p-2 hover:bg-[#808080] hover:text-white  rounded-full bg-[#00A63E] cursor-pointer border-1 text-center ml-2 text-white">
+                        <h3 class="">Clear</h3>
+                    </div>
+                </div>
+
+                <div id="history" class="history ">
+
+
+                </div>
+
+            </div>
+
+
+
+            </div>
+
             </div>
         </section>
     </main>
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>
