@@ -24,8 +24,8 @@ for(const callBtn of allCallBtn){
     callBtn.addEventListener("click",function(){
       const parentOfBtn = callBtn.parentNode;
       const parentOfParent = parentOfBtn.parentNode;
-      const serviceName = parentOfParent.querySelector("h2").innerText; 
-      const serviceNumber = parentOfParent.querySelector("h1").innerText;
+      const serviceName = parentOfParent.querySelector("h1:first-of-type").innerText; 
+      const serviceNumber = parentOfParent.querySelector("h1:last-of-type").innerText;
 
        let coinNumber = parseInt(document.getElementById("coin-number").innerText);
         
@@ -64,7 +64,7 @@ const newDiv = document.createElement("div");
  newDiv.innerHTML =`
  
  
-    <div class="letest-call-history flex items-center justify-between my-3">
+    <div class="letest-call-history flex items-center justify-between my-3 bg-gray-300 p-3 rounded-xl">
     <div class="left ">
         <h2 class="font-medium text-[13px]">${callHistory[i].service}</h2>
         <p>${callHistory[i].number}</p>
